@@ -1,2 +1,1 @@
-# terraform-pipeline-azure
-terraform-pipeline-azure
+# di-b18-infra
