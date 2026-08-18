@@ -27,7 +27,12 @@ jobs:
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
-      
+
+      - name: Azure Login
+	      uses: azure/login@v2
+        with:
+          creds: '${{ secrets.pipeline1 }}'
+
       - name: Check Azure Login
         run: az account show
 
